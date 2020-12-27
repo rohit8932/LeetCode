@@ -21,7 +21,7 @@ Explanation: Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and su
 
 public class ContunuousSunarraySum {
 
-	public boolean checkSubarraySum(int[] nums, int k) {
+	public boolean checkSubarraySum(int[] nums, int k) { //this is O(n^2) solution
 
 		for (int i = nums.length - 1; i > 0; i--) {
 			int j = i - 1;
@@ -44,7 +44,7 @@ public class ContunuousSunarraySum {
 
 	public static void main(String[] args) {
 		ContunuousSunarraySum css = new ContunuousSunarraySum();
-		css.checkSubarraySum(new int[] {1,0,1,0,1}, 4);
+		System.out.println(css.checkSubarraySum(new int[] {1,0,1,0,1}, 4));
 	}
 
 }
