@@ -18,7 +18,7 @@ public class islandPerimeter {
 			return 1;
 		
 		if(mat[i][j] == 2) return 0;
-		mat[i][j] = 2;
+		mat[i][j] = 2; //so that we wont visit same cell again, kind of visited mark
 		return dfs(mat, i - 1, j) + dfs(mat, i + 1, j) + dfs(mat, i, j - 1) + dfs(mat, i, j + 1);  
 	}
 	

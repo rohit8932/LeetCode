@@ -12,10 +12,10 @@ public class KnightOnChessBoard {
 		}
 	}
 	public int knight(int A, int B, int C, int D, int E, int F) {
-		C = C-1;
+		C = C-1; //below 4 lines done just for index related things
 		D = D-1;
-		E = E - 1;
-		F = F - 1;
+		E = E - 1; //target x coordinate
+		F = F - 1; //target y coordinate
 		Queue<Cell> q = new LinkedList<>();
 		boolean[][] visited = new boolean[A][B];
 		q.add(new Cell(C, D));
@@ -27,7 +27,7 @@ public class KnightOnChessBoard {
 			int size = q.size();
 			for(int i = 0; i < size; i++) {
 				Cell temp = q.poll();
-				if(temp.x == E && temp.y == F) return ans;
+				if(temp.x == E && temp.y == F) return ans; //we reached the target
 				for(int c = 0; c < row.length; c++) {
 					int newX = temp.x + row[c];
 					int newY = temp.y + col[c];

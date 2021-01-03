@@ -63,7 +63,7 @@ public class RottenOranges {
 	
 	public static void main(String[] args) {
 		RottenOranges ro = new RottenOranges();
-		int[][] mat = {{2,1,1},{0,1,1},{1,0,1}};
+		int[][] mat = {{2,1,1},{0,1,1},{1,0,1}}; //0 - no tomatoes, 1 = fresh tomato, 2 = Rotten tomatoes
 		System.out.println(ro.orangesRotting(mat));
 	}
 

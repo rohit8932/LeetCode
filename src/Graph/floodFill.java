@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class floodFill {
 	
-	public void fillColor(int[][] mat, int x, int y, int newPixel) {
+	public void fillColor(int[][] mat, int x, int y, int newPixel) { //replace old color at x and y
 		int oldPixel = mat[x][y];
 		boolean[][] visited = new boolean[mat.length][mat[0].length]; //why it was needed? what will happen when oldColor and new Color is same
 		bfs(mat, x, y, oldPixel, newPixel, visited);
