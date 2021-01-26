@@ -31,10 +31,19 @@ public class rodCuttingMaximumProfit {
 	}
 	
 	
+	
 	public static void main(String[] args) {
 		rodCuttingMaximumProfit rc = new rodCuttingMaximumProfit();
-		System.out.println(rc.rodCutting_topDown(new int[] {0, 1, 5, 8, 9, 10, 17, 20}, 10));
-		System.out.println(rc.rodCuting_bottomUp(new int[] {0, 1, 5, 8, 9, 10, 17, 20}, 10));
+//		long start = System.nanoTime();
+		System.out.println(rc.rodCutting_topDown(new int[] {0, 1, 5, 8, 9, 10, 17, 20}, 20));
+//		long stop = System.nanoTime();
+//		System.out.println("Recurisive took " + (stop - start));
+		
+//		start = System.nanoTime();
+		System.out.println(rc.rodCuting_bottomUp(new int[] {0, 1, 5, 8, 9, 10, 17, 2}, 2));
+//		stop = System.nanoTime();
+//		System.out.println("DP took " + (stop - start));
+		
 	}
 
 }
